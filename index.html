@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="scoreBox" id="playerX">Player X: <br><span class="score" id="xScore">0</span></div>
+        <h1>Noughts and Crosses</h1>
+        <div class="scoreBox" id="playerO">Player O: <br><span class="score" id="oScore">0</span></div>
+    </header>
+
+    <main>
+        <div>Player <span id="turn"></span>'s Turn</div>
+        <div class="main-div">
+            <div class="square vert hori" id="1"></div>
+            <div class="square vert hori" id="2"></div>
+            <div class="square hori" id="3"></div>
+            <div class="square vert hori" id="4"></div>
+            <div class="square vert hori" id="5"></div>
+            <div class="square hori" id="6"></div>
+            <div class="square vert" id="7"></div>
+            <div class="square vert" id="8"></div>
+            <div class="square" id="9"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="xBtn" title="Change to X's turn">X</button>
+            <button id="resetBtn" title="Refresh the current game">Reset Game</button>
+            <button id="resetScore" title="Reset the scores to zero">Reset Scores</button>
+            <button id="oBtn" title="Change to O's turn">O</button>
+        </div>
+
+    </main>
+
+    <div id="completeBox">
+        <p>Player <span id="winner"></span> Wins!</p>
+        <button id="nextGame">Next Game</button>
+    </div>
+
+</body>
+</html>
